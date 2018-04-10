@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E263929C207C6A3800268D31 /* view3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E263929B207C6A3800268D31 /* view3.jpg */; };
+		E26392A2207C70BE00268D31 /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26392A1207C70BE00268D31 /* ItemView.xib */; };
+		E26392A6207C797800268D31 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26392A5207C797800268D31 /* ItemView.m */; };
 		E26CD7912077662E0011AA4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CD7902077662E0011AA4D /* AppDelegate.m */; };
 		E26CD7942077662E0011AA4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CD7932077662E0011AA4D /* ViewController.m */; };
 		E26CD7972077662E0011AA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26CD7952077662E0011AA4D /* Main.storyboard */; };
 		E26CD7992077662E0011AA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26CD7982077662E0011AA4D /* Assets.xcassets */; };
 		E26CD79C2077662E0011AA4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26CD79A2077662E0011AA4D /* LaunchScreen.storyboard */; };
 		E26CD79F2077662E0011AA4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CD79E2077662E0011AA4D /* main.m */; };
+		E26CD7A8207767890011AA4D /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CD7A7207767890011AA4D /* Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E263929B207C6A3800268D31 /* view3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = view3.jpg; path = ../../../../../Downloads/view3.jpg; sourceTree = "<group>"; };
+		E26392A1207C70BE00268D31 /* ItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
+		E26392A3207C713600268D31 /* view3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view3.jpg; sourceTree = "<group>"; };
+		E26392A4207C797800268D31 /* ItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
+		E26392A5207C797800268D31 /* ItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
+		E26392A8207CB8BA00268D31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E26CD78C2077662E0011AA4D /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26CD78F2077662E0011AA4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E26CD7902077662E0011AA4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +36,8 @@
 		E26CD79B2077662E0011AA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E26CD79D2077662E0011AA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26CD79E2077662E0011AA4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E26CD7A6207767890011AA4D /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		E26CD7A7207767890011AA4D /* Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E263929D207C6F2900268D31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E26392A3207C713600268D31 /* view3.jpg */,
+				E26392A1207C70BE00268D31 /* ItemView.xib */,
+				E26392A4207C797800268D31 /* ItemView.h */,
+				E26392A5207C797800268D31 /* ItemView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E26CD7832077662E0011AA4D = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +81,8 @@
 		E26CD78E2077662E0011AA4D /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				E263929D207C6F2900268D31 /* Views */,
+				E26CD7A5207767590011AA4D /* Utils */,
 				E26CD78F2077662E0011AA4D /* AppDelegate.h */,
 				E26CD7902077662E0011AA4D /* AppDelegate.m */,
 				E26CD7922077662E0011AA4D /* ViewController.h */,
@@ -69,6 +94,16 @@
 				E26CD79E2077662E0011AA4D /* main.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		E26CD7A5207767590011AA4D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E263929B207C6A3800268D31 /* view3.jpg */,
+				E26CD7A6207767890011AA4D /* Log.h */,
+				E26CD7A7207767890011AA4D /* Log.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +166,8 @@
 			files = (
 				E26CD79C2077662E0011AA4D /* LaunchScreen.storyboard in Resources */,
 				E26CD7992077662E0011AA4D /* Assets.xcassets in Resources */,
+				E26392A2207C70BE00268D31 /* ItemView.xib in Resources */,
+				E263929C207C6A3800268D31 /* view3.jpg in Resources */,
 				E26CD7972077662E0011AA4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26392A6207C797800268D31 /* ItemView.m in Sources */,
 				E26CD7942077662E0011AA4D /* ViewController.m in Sources */,
 				E26CD79F2077662E0011AA4D /* main.m in Sources */,
+				E26CD7A8207767890011AA4D /* Log.m in Sources */,
 				E26CD7912077662E0011AA4D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +194,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E26CD7962077662E0011AA4D /* Base */,
+				E26392A8207CB8BA00268D31 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -199,9 +239,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ilovetayninh@gmail.com (AJPT29J66T)";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PALYJ37HZ3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -218,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -254,9 +296,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ilovetayninh@gmail.com (AJPT29J66T)";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PALYJ37HZ3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -267,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -284,7 +328,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = demo.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,7 +342,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = demo.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
