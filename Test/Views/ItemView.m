@@ -41,8 +41,11 @@
 - (void) initCustom {
     [[NSBundle mainBundle] loadNibNamed:@"ItemView" owner:self options:nil];
     [self.containerView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.containerView addSubview: self.image];
     [self addSubview:self.containerView];
     self.containerView.frame = self.bounds;
+    self.image.image = [UIImage imageNamed:@"view3"];
+    
 }
 
 

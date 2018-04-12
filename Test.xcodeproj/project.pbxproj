@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E257B024207EFD1200085FB1 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E257B022207EFD1200085FB1 /* ItemCell.m */; };
+		E257B025207EFD1200085FB1 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E257B023207EFD1200085FB1 /* ItemCell.xib */; };
+		E257B029207F380A00085FB1 /* ItemsTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E257B027207F380A00085FB1 /* ItemsTableViewViewController.m */; };
+		E257B02A207F380A00085FB1 /* ItemsTableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E257B028207F380A00085FB1 /* ItemsTableViewViewController.xib */; };
 		E263929C207C6A3800268D31 /* view3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E263929B207C6A3800268D31 /* view3.jpg */; };
 		E26392A2207C70BE00268D31 /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26392A1207C70BE00268D31 /* ItemView.xib */; };
 		E26392A6207C797800268D31 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26392A5207C797800268D31 /* ItemView.m */; };
@@ -20,9 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E257B021207EFD1200085FB1 /* ItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		E257B022207EFD1200085FB1 /* ItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		E257B023207EFD1200085FB1 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		E257B026207F380A00085FB1 /* ItemsTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsTableViewViewController.h; sourceTree = "<group>"; };
+		E257B027207F380A00085FB1 /* ItemsTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewViewController.m; sourceTree = "<group>"; };
+		E257B028207F380A00085FB1 /* ItemsTableViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsTableViewViewController.xib; sourceTree = "<group>"; };
 		E263929B207C6A3800268D31 /* view3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = view3.jpg; path = ../../../../../Downloads/view3.jpg; sourceTree = "<group>"; };
 		E26392A1207C70BE00268D31 /* ItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
-		E26392A3207C713600268D31 /* view3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view3.jpg; sourceTree = "<group>"; };
 		E26392A4207C797800268D31 /* ItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
 		E26392A5207C797800268D31 /* ItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
 		E26392A8207CB8BA00268D31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -51,13 +60,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E257B020207EFCC300085FB1 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				E257B021207EFD1200085FB1 /* ItemCell.h */,
+				E257B022207EFD1200085FB1 /* ItemCell.m */,
+				E257B023207EFD1200085FB1 /* ItemCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		E263929D207C6F2900268D31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E26392A3207C713600268D31 /* view3.jpg */,
+				E257B020207EFCC300085FB1 /* CustomCells */,
 				E26392A1207C70BE00268D31 /* ItemView.xib */,
 				E26392A4207C797800268D31 /* ItemView.h */,
 				E26392A5207C797800268D31 /* ItemView.m */,
+				E257B026207F380A00085FB1 /* ItemsTableViewViewController.h */,
+				E257B027207F380A00085FB1 /* ItemsTableViewViewController.m */,
+				E257B028207F380A00085FB1 /* ItemsTableViewViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,7 +188,9 @@
 			files = (
 				E26CD79C2077662E0011AA4D /* LaunchScreen.storyboard in Resources */,
 				E26CD7992077662E0011AA4D /* Assets.xcassets in Resources */,
+				E257B025207EFD1200085FB1 /* ItemCell.xib in Resources */,
 				E26392A2207C70BE00268D31 /* ItemView.xib in Resources */,
+				E257B02A207F380A00085FB1 /* ItemsTableViewViewController.xib in Resources */,
 				E263929C207C6A3800268D31 /* view3.jpg in Resources */,
 				E26CD7972077662E0011AA4D /* Main.storyboard in Resources */,
 			);
@@ -179,10 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E257B024207EFD1200085FB1 /* ItemCell.m in Sources */,
 				E26392A6207C797800268D31 /* ItemView.m in Sources */,
 				E26CD7942077662E0011AA4D /* ViewController.m in Sources */,
 				E26CD79F2077662E0011AA4D /* main.m in Sources */,
 				E26CD7A8207767890011AA4D /* Log.m in Sources */,
+				E257B029207F380A00085FB1 /* ItemsTableViewViewController.m in Sources */,
 				E26CD7912077662E0011AA4D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
