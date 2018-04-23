@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ItemsTableViewViewController : UIViewController
+@interface ItemsTableViewViewController : UITableViewController
 
 - (id) initWithFrame:(CGRect)frame andArray:(NSArray *)array;
 

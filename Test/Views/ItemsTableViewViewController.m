@@ -12,19 +12,22 @@
 @interface ItemsTableViewViewController () <UITableViewDelegate, UITableViewDataSource> {
      NSArray *contentData;
 }
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (nonatomic, copy) NSMutableArray *listLog;
 
 @end
 
 @implementation ItemsTableViewViewController
 
+- (void)loadView {
+    [super loadView];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.tableView.estimatedRowHeight = 250;
-    self.tableView.rowHeight = 250;
+    self.tableView.estimatedRowHeight = 415;
+    self.tableView.rowHeight = 415;
     [self.tableView setNeedsLayout];
     [self.tableView layoutIfNeeded];
     self.tableView.delegate = self;
@@ -114,11 +117,6 @@
     
     cell.ItemCheck.tag = indexPath.row;
     [cell.ItemCheck addTarget:self action:@selector(btnShowLog:) forControlEvents:UIControlEventTouchUpInside];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 250;
 }
 
 - (IBAction) btnShowLog:(id)sender {

@@ -16,5 +16,6 @@
 @property (strong, nonatomic) IBOutlet UIView *container;
 @property (nonatomic, strong) ItemsTableViewViewController *itemstableView;
 @property (nonatomic, weak) NSArray *array;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

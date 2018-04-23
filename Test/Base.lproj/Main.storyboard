@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tnb-mW-ry5">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,15 +21,59 @@
                     <view key="view" contentMode="scaleToFill" id="OFw-1S-m23">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5cu-yh-NlO">
+                                <rect key="frame" x="20" y="28" width="374" height="688"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="0ly-EX-v2P"/>
+                                    <constraint firstAttribute="height" constant="688" id="cu5-ub-7Ws"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qrf-I8-Jaf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fKA-RK-C1y"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5cu-yh-NlO" firstAttribute="centerY" secondItem="OFw-1S-m23" secondAttribute="centerY" id="9gV-ll-KBk"/>
+                            <constraint firstItem="5cu-yh-NlO" firstAttribute="top" secondItem="WQx-ep-dF8" secondAttribute="bottom" constant="8" id="VNG-Yi-5gh"/>
+                            <constraint firstItem="5cu-yh-NlO" firstAttribute="trailing" secondItem="OFw-1S-m23" secondAttribute="trailingMargin" id="eb0-jw-byZ"/>
+                            <constraint firstItem="5cu-yh-NlO" firstAttribute="centerX" secondItem="OFw-1S-m23" secondAttribute="centerX" id="gTR-zy-60y"/>
+                            <constraint firstItem="5cu-yh-NlO" firstAttribute="leading" secondItem="OFw-1S-m23" secondAttribute="leadingMargin" id="itc-9n-pLT"/>
+                            <constraint firstItem="5tF-Kp-yce" firstAttribute="top" secondItem="5cu-yh-NlO" secondAttribute="bottom" constant="20" id="mXi-fY-xp7"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="container" destination="OFw-1S-m23" id="EtP-dN-Ujk"/>
+                        <outlet property="tableView" destination="5cu-yh-NlO" id="4LV-69-8di"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.637681159420293" y="30.978260869565219"/>
+        </scene>
+        <!--Items Table View View Controller-->
+        <scene sceneID="T9d-n7-gho">
+            <objects>
+                <tableViewController id="tnb-mW-ry5" customClass="ItemsTableViewViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cWJ-hL-AgU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="tnb-mW-ry5" id="bsv-Xq-Szc"/>
+                            <outlet property="delegate" destination="tnb-mW-ry5" id="7Ot-dx-zA4"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableView" destination="cWJ-hL-AgU" id="rwm-gP-Tmg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuQ-YX-OWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="-39"/>
         </scene>
     </scenes>
 </document>
