@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
     self.tableView.estimatedRowHeight = 415;
     self.tableView.rowHeight = 415;
@@ -52,7 +53,7 @@
 }
 
 - (id) initWithFrame:(CGRect)frame andArray:(NSArray *)array {
-    self = [super initWithNibName:@"ItemsTableViewViewController" bundle:nil];
+    //self = [super initWithNibName:@"ItemsTableViewViewController" bundle:nil];
     if (self) {
         self.view.frame = frame;
         if (array) {
@@ -99,7 +100,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"abcxyz";
-    
     ItemCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     if(!cell) {
@@ -108,15 +108,13 @@
         cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     }
     
-    return cell;
-}
-
-- (void) tableView:(UITableView *)tableView willDisplayCell:(ItemCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell.itemImage setImage:[UIImage imageNamed:@"view3"]];
     [cell.itemName setText: [contentData objectAtIndex:indexPath.row]];
     
     cell.ItemCheck.tag = indexPath.row;
     [cell.ItemCheck addTarget:self action:@selector(btnShowLog:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return cell;
 }
 
 - (IBAction) btnShowLog:(id)sender {
